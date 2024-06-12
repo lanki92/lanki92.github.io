@@ -25,3 +25,8 @@
     ```
     sudo raspi-config
     ```
+1. (Optional) Reset every day at 3:00am
+
+    ```
+    (crontab -l 2>/dev/null; echo "0 3 * * * sudo shutdown -r now") | crontab -
+    ```
